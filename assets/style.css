@@ -216,6 +216,10 @@ p {
   color: white;
 }
 
+.service-containers ul {
+  padding-left: 30px;
+}
+
 .service-containers h3 {
   font-family: "Inter";
   font-size: 1.5em;
@@ -619,4 +623,5 @@ nav ul li {
 
   
 }
+
 
