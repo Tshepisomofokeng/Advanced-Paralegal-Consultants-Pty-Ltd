@@ -593,6 +593,12 @@ nav ul li {
     text-align: center;
   }
 
+  .banner img {
+  max-width: 300px;
+  justify-self: center;
+  align-self: end;
+}
+
   .banner-social-media {
     place-self: center;
   }
@@ -650,3 +656,4 @@ font-size: 0.8em;
 
   
 }
+
