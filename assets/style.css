@@ -311,6 +311,13 @@ p {
 .contact-section-icons {
   align-self: end;
   display: grid;
+  
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "location  "
+      "envelope "
+      "image";
+  
 }
 
 .contact-section-icons i {
@@ -458,9 +465,7 @@ form button {
   .checkbtn {
     display: block;
   }
-  nav  {
-    justify-content:space-between;
-  }
+
   nav ul {
     position: absolute;
     top: 100px;
@@ -472,7 +477,9 @@ form button {
     padding: 30px 0;
     transition: 0.3s ease;
   }
-
+nav  {
+    justify-content:space-between;
+  }
   
 nav ul li {
     width: 100%;
@@ -621,7 +628,25 @@ nav ul li {
       "card-6";
   }
 
+  .footer h2{
+    font-size: 1.5em;
+  }
+
+  .footer-icons a {
   
+  width: 30px;
+  height: 30px;
+ 
 }
 
+.footer i {
+  color: #051e56;
+  font-size: 1em;
+}
 
+  .copyright p{
+font-size: 0.8em;
+  }
+
+  
+}
