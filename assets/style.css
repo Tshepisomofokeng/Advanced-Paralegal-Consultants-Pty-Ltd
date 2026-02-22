@@ -454,7 +454,9 @@ form button {
   .checkbtn {
     display: block;
   }
-
+  nav  {
+    justify-content:space-between;
+  }
   nav ul {
     position: absolute;
     top: 100px;
@@ -617,3 +619,4 @@ nav ul li {
 
   
 }
+
