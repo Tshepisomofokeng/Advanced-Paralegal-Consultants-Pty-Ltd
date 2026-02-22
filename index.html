@@ -232,11 +232,32 @@
                         <input type="email" name="email" placeholder="Email" required>
                         <br><br>
 
-                        <select name="service" required>
-                            <option value="">Select a service</option>
-                            <option value="document-preparation">Document Preparation</option>
-                            <option value="divorce-assistance">Divorce Assistance</option>
-                            <option value="legal-drafting">Legal Drafting</option>
+                        <select name="service" id="service" required>
+                            <option value="" disabled selected>Select a service</option>
+
+                            <optgroup label="Litigation Support">
+                                <option value="legal-drafting-research">Legal Drafting and Research</option>
+                                <option value="issuing-filing-court-documents">Issuing and Filing of Court Documents
+                                </option>
+                                <option value="court-online-caselines-management">Court Online & CaseLines Management
+                                </option>
+                                <option value="sheriff-service-attendance">Sheriff and Service Attendance</option>
+                            </optgroup>
+
+                            <optgroup label="Administrative Services">
+                                <option value="case-client-administration">Case and Client Administration</option>
+                                <option value="document-preparation">Document Preparation (Indexing & Pagination)
+                                </option>
+                            </optgroup>
+
+                            <optgroup label="Private Legal Services">
+                                <option value="uncontested-divorce-assistance">Uncontested Divorce Assistance</option>
+                                <option value="will-drafting-estate-planning">Will Drafting and Estate Planning</option>
+                                <option value="contract-drafting-review">Contract Drafting and Review</option>
+                                <option value="letters-of-demand">Letters of Demand</option>
+                                <option value="property-history-research">Property History Research</option>
+                                <option value="basic-legal-guidance">Basic Legal Guidance</option>
+                            </optgroup>
                         </select>
                         <br><br>
 
