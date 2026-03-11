@@ -679,8 +679,6 @@ nav ul li {
 
 @media (max-width: 674px) {
   .containers {
-    padding-left: 15px;
-    padding-right: 15px;
     max-width: 100%;
   }
 }
@@ -758,5 +756,6 @@ font-size: 0.8em;
 
   
 }
+
 
 
