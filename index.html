@@ -4,6 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Advanced Paralegal Consultants (Pty) Ltd",
+        "image": "https://yourdomain.co.za/assets/img/advanced-paralegal-consultants-logo.webp",
+        "url": "https://yourdomain.co.za",
+        "telephone": "+27627675758",
+        "email": "advanceparalegalconsultants@gmail.com",
+        "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "ZA"
+        },
+        "areaServed": "South Africa",
+        "serviceType": "Paralegal Services"
+        }
+    </script>
+    <meta property="og:title" content="Advanced Paralegal Consultants (Pty) Ltd">
+    <meta property="og:description" content="Affordable professional paralegal services across South Africa.">
+    <meta property="og:image" content="https://yourdomain.co.za/assets/img/social-preview.webp">
+    <meta property="og:url" content="https://yourdomain.co.za">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -14,7 +36,10 @@
         content="Advanced Paralegal Consultants (Pty) Ltd provides professional and affordable paralegal services to law firms and members of the public in South Africa. Legal drafting, document preparation, divorce assistance and more.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
     <title>Advanced Paralegal Consultants (Pty) Ltd | Affordable Paralegal Services South Africa</title>
 </head>
 
@@ -235,13 +260,13 @@
                         <input type="hidden" name="form-name" value="contact">
 
 
-                        <input type="text" name="name" id="name" placeholder="Name" required>
+                        <input type="text" name="name" id="name" placeholder="Name" autocomplete="name" required>
                         <br><br>
 
                         <input type="tel" name="phone" id="phone" placeholder="Phone Number" pattern="[0-9]{10}"
-                            required><br><br>
+                            autocomplete="tel" required><br><br>
 
-                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <input type="email" name="email" id="email" placeholder="Email" autocomplete="email" required>
                         <br><br>
 
                         <select name="service" id="service" required>
