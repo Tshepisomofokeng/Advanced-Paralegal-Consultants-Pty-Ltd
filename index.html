@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://acppralegal.co.za/" />
     <script type="application/ld+json">
         {
         "@context": "https://schema.org",
         "@type": "LegalService",
         "name": "Advanced Paralegal Consultants (Pty) Ltd",
-        "image": "https://yourdomain.co.za/assets/img/advanced-paralegal-consultants-logo.webp",
-        "url": "https://yourdomain.co.za",
+        "image": "https://acppralegal.co.za/assets/img/advanced-paralegal-consultants-logo.webp",
+        "url": "https://acppralegal.co.za",
         "telephone": "+27627675758",
         "email": "advanceparalegalconsultants@gmail.com",
         "address": {
@@ -23,8 +24,8 @@
     </script>
     <meta property="og:title" content="Advanced Paralegal Consultants (Pty) Ltd">
     <meta property="og:description" content="Affordable professional paralegal services across South Africa.">
-    <meta property="og:image" content="https://yourdomain.co.za/assets/img/social-preview.webp">
-    <meta property="og:url" content="https://yourdomain.co.za">
+    <meta property="og:image" content="https://acppralegal.co.za/assets/img/social-preview.webp">
+    <meta property="og:url" content="https://acppralegal.co.za">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -37,6 +38,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Advanced Paralegal Consultants (Pty) Ltd">
+    <meta name="twitter:description" content="Affordable professional paralegal services across South Africa.">
+    <meta name="twitter:image" content="https://acppralegal.co.za/assets/img/social-preview.webp">
+    <meta name="format-detection" content="telephone=no">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
@@ -48,7 +56,10 @@
     <header>
         <nav>
 
-            <img class="logo" src="assets/img/advanced-paralegal-consultants-logo.webp" alt="">
+            <a href="/" class="logo-link">
+                <img class="logo" src="assets/img/advanced-paralegal-consultants-logo.webp"
+                    alt="Advanced Paralegal Consultants (Pty) Ltd Logo">
+            </a>
 
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
@@ -107,11 +118,11 @@
         <section class="about reveal" id="about">
             <div class="about-images">
                 <img class="img1" src="assets/img/paralegal-office-environment-south-africa.webp"
-                    alt="Paralegal office environment Ssouth Africa">
+                    alt="Paralegal office environment Ssouth Africa" loading="lazy">
                 <img class="img2" src="assets/img/legal-document-preparation-services.webp"
-                    alt="Legal document preparation services">
+                    alt="Legal document preparation services" loading="lazy">
                 <img class="img3" src="assets/img/professional-paralegal-consultation.webp"
-                    alt="Professional paralegal consultation">
+                    alt="Professional paralegal consultation" loading="lazy">
             </div>
             <div class="about-content">
                 <h6>Making Law Accessible. Professional. Ethical. Efficient.</h6>
@@ -300,6 +311,9 @@
 
                         <textarea name="message" id="message" rows="5" placeholder="Message" required></textarea>
                         <br>
+                        <div style="position: absolute; left: -9999px;" aria-hidden="true">
+                            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+                        </div>
 
                         <button type="submit" id="submitBtn">SUBMIT</button>
                         <div id="formMessage" style="margin-top: 15px; color: green;"></div>
@@ -320,7 +334,8 @@
                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="https://wa.me" target="_blank"><i class="fa-brands fa-whatsapp"></i></i></a>
+                <a href="https://wa.me/27627675758" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-whatsapp"></i></i></a>
             </div>
             <ul>
                 <a href="/">
@@ -342,10 +357,11 @@
         </div>
 
         <div class="copyright">
-            <p><p>© 2026 Advanced Paralegal Consultants (Pty) Ltd. | Developed by <a href="https://tshepisodesignandwebsolutions.co.za/" target="_blank" rel="noopener noreferrer">Tshepiso Design & Web Solutions</a></p></p>
-            
+            <p>© 2026 Advanced Paralegal Consultants (Pty) Ltd. | Developed by <a
+                    href="https://tshepisodesignandwebsolutions.co.za/" target="_blank"
+                    rel="noopener noreferrer">Tshepiso Design & Web Solutions</a></p>
         </div>
-        
+
     </footer>
     <script>
 
@@ -400,15 +416,15 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const counter = entry.target;
-                    const target = +counter.getAttribute("data-target");
+                    const target = parseInt(counter.getAttribute("data-target"));
                     let count = 0;
+                    const duration = 2000; // 2 seconds
+                    const increment = target / (duration / 16); // 60fps
 
                     const updateCounter = () => {
-                        const increment = target / 100;
-
+                        count += increment;
                         if (count < target) {
-                            count += increment;
-                            counter.innerText = Math.ceil(count);
+                            counter.innerText = Math.floor(count);
                             requestAnimationFrame(updateCounter);
                         } else {
                             counter.innerText = target;

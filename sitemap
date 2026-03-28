@@ -1,26 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
- <url>
-   <loc>https://acpparalegal.co.za/</loc>
-   <priority>1.0</priority>
- </url>
-
- <url>
-   <loc>https://acpparalegal.co.za/#about</loc>
- </url>
-
- <url>
-   <loc>https://acpparalegal.co.za/#services</loc>
- </url>
-
- <url>
-   <loc>https://acpparalegal.co.za/#why-choose-us</loc>
- </url>
-
- <url>
-   <loc>https://acpparalegal.co.za/#contact-us</loc>
- </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <url>
+    <loc>https://acppralegal.co.za/</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    
+    <image:image>
+      <image:loc>https://acppralegal.co.za/assets/img/advanced-paralegal-consultants-logo.webp</image:loc>
+      <image:title>Advanced Paralegal Consultants Logo</image:title>
+      <image:caption>Professional paralegal services in South Africa</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://acppralegal.co.za/assets/img/advanced-paralegal-consultants.webp</image:loc>
+      <image:title>Paralegal Services Hero Image</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://acppralegal.co.za/assets/img/paralegal-office-environment-south-africa.webp</image:loc>
+      <image:title>Paralegal Office Environment</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://acppralegal.co.za/assets/img/mfanelo-advance-chauke-certified-paralegal-south-africa.webp</image:loc>
+      <image:title>Mfanelo Advance Chauke - Certified Paralegal</image:title>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://acppralegal.co.za/assets/img/contact-us.webp</image:loc>
+      <image:title>Contact Advanced Paralegal Consultants</image:title>
+    </image:image>
+  </url>
 
 </urlset>
