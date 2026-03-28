@@ -748,15 +748,18 @@ form button:focus-visible {
   }
 }
 
+.containers h2 {
+    font-weight: 900;
+  }
+
 @media (max-width: 674px) {
   .containers {
     max-width: 100%;
     padding-left: 20px;
     padding-right: 20px;
-     margin-top: 40px;
+     margin-top: 50px;
   }
 
-  
 }
 
 @media (max-width: 576px) {
